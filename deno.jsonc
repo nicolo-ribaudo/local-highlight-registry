@@ -1,0 +1,25 @@
+{
+  "name": "@nic/local-highlight-registry",
+  "version": "0.1.0",
+  "exports": "./main.ts",
+  "publish": {
+    "include": ["./LICENSE.tst", "./main.ts", "./deno.jsonc"]
+  },
+
+  "tasks": {
+    "test": "deno run -A npm:vitest -c ./test/vitest.config.js"
+  },
+
+  "imports": {
+    "@vitest/browser": "npm:@vitest/browser@^2.1.3",
+    "playwright": "npm:playwright@^1.48.2",
+    // Vite depends on Rollup, but Rollup 4.24.1 depends on a non-existing package
+    "rollup": "npm:rollup@4.24.0",
+    "vitest": "npm:vitest@^2.1.3"
+  },
+
+  "compilerOptions": {
+    "lib": ["esnext", "dom", "dom.iterable"]
+  },
+  "nodeModulesDir": "auto"
+}
