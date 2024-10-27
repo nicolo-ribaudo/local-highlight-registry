@@ -83,7 +83,7 @@ export class LocalHighlightRegistry {
 
   /**
    * Mark a {@linkcode Range} object, describing a range of text in the document,
-   * with a given `Highlight` name. The range can then be styled using the CSS
+   * with a given {@linkcode Highlight} name. The range can then be styled using the CSS
    * [`::highlight(<name>)`](https://developer.mozilla.org/en-US/docs/Web/CSS/::highlight)
    * pseudo-element.
    *
